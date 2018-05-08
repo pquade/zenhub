@@ -1,0 +1,116 @@
+== Zuordnung der Daten zu den Screens der Kontaktdetail-Tabs
+
+.Datentabellen in VS3-DB (Oracle)
+* HBP.DBADMIN.BESITZVERHAELTNIS
+* HBP.DBADMIN.KONTAKTDATEN
+* HBP.DBADMIN.PERSON
+* HBP.DBADMIN.PERSON__INFORMATION
+* HBP.DBADMIN.INDIVIDUELLE__ZUSTELLANSCHRIFT
+
+.Tab _Kontaktinformationen_
+|===
+| Nr.| Exportdatei                  | Feld(er)                  | Kommentar
+|  1 | OW '*_VS3-04-Adressen_*.dat' | ADRFIRMANREDE             |
+|  2 | OW '*_VS3-04-Adressen_*.dat' | ADRFIRMBEZ1               |
+|  3 | OW '*_VS3-04-Adressen_*.dat' | ADRFIRMBEZ2               |
+|  4 | OW '*_VS3-04-Adressen_*.dat' | ADRFIRMBEZ3               |
+|  5 | OW '*_VS3-04-Adressen_*.dat' | ADRTEL1 ... ADRTEL4       | ??? Wenn Zustelladr. = IZA, muss dann hier IZA-Daten hin ???
+|  6 | OW '*_VS3-04-Adressen_*.dat' | ADRTELFAX1 ADRTELFAX2     | ??? Wenn Zustelladr. = IZA, muss dann hier IZA-Daten hin ???
+|  7 | OW '*_VS3-04-Adressen_*.dat' | ADRTELMOBIL1 ADRTELMOBIL2 | ??? Wenn Zustelladr. = IZA, muss dann hier IZA-Daten hin ???
+|  8 | OW '*_VS3-04-Adressen_*.dat' | ADREMAIL1 ADREMAIL1       | ??? Wenn Zustelladr. = IZA, muss dann hier IZA-Daten hin ???
+|  9 | OW '*_VS3-04-Adressen_*.dat' | ADRBRANREDE1              | 
+| 10 | OW '*_VS3-04-Adressen_*.dat' | ADRBRANREDE2              |
+| 11 | OW '*_VS3-04-Adressen_*.dat' | ADRANREDE1                |
+| 12 | OW '*_VS3-04-Adressen_*.dat' | ADRANREDEZUS1             |
+| 13 | OW '*_VS3-04-Adressen_*.dat' | ADRTITEL1                 |
+| 14 | OW '*_VS3-04-Adressen_*.dat' | ADRTITELKURZ1             |
+| 15 | OW '*_VS3-04-Adressen_*.dat' | ADRVORNAME1               |
+| 16 | OW '*_VS3-04-Adressen_*.dat' | ADRNACHNAME1              |
+| 17 | OW '*_VS3-04-Adressen_*.dat' | ADRANREDE2                |
+| 18 | OW '*_VS3-04-Adressen_*.dat' | ADRANREDEZUS2             |
+| 19 | OW '*_VS3-04-Adressen_*.dat' | ADRTITEL2                 |
+| 20 | OW '*_VS3-04-Adressen_*.dat' | ADRTITELKURZ2             |
+| 21 | OW '*_VS3-04-Adressen_*.dat' | ADRVORNAME2               |
+| 22 | OW '*_VS3-04-Adressen_*.dat' | ADRNACHNAME2              |
+|===
+
+.Tab _Adressdaten_
+|===
+| Nr.| Exportdatei                  | Feld(er)                | Kommentar
+| 23 | OW '*_VS3-04-Adressen_*.dat' | ADRSTRASSE              | aus der Zustellanschrift
+| 24 | OW '*_VS3-04-Adressen_*.dat' | ADRPLZ                  | aus der Zustellanschrift
+| 25 | OW '*_VS3-04-Adressen_*.dat' | ADRORT                  | aus der Zustellanschrift
+| 26 | OW '*_VS3-04-Adressen_*.dat' | ADRORTSZUSATZ           | aus der Zustellanschrift
+| 27 | OW '*_VS3-04-Adressen_*.dat' | ADRLAND                 | aus der Zustellanschrift
+| 28 | OW '*_VS3-04-Adressen_*.dat' | ADRHOMEPAGE             | aus der Zustellanschrift
+| 29 | OW '*_VS3-04-Adressen_*.dat' | ADRANSCH1 ... ADRANSCH6 | ??? Gibt es ggf. andere Regeln für den Adressaufkleber ???
+|===
+
+.Tab _individuelle Zustelladresse_
+|===
+| Nr.| Exportdatei                  | Feld(er)            | Kommentar
+| 30 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1FIRMANREDE |
+| 31 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1FIRMBEZ1   |
+| 32 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1FIRMBEZ2   |
+| 33 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1FIRMBEZ3   |
+| 34 | OW '*_VS3-04-Adressen_*.dat' | INDIVZUSTELLANW     | mögliche Werte: c/o , per Adr. , z.Hd. von , keine
+| 35 | OW '*_VS3-04-Adressen_*.dat' | INDIVADRSTRASSE     |
+| 36 | OW '*_VS3-04-Adressen_*.dat' | INDIVADRPLZ         |
+| 37 | OW '*_VS3-04-Adressen_*.dat' | INDIVADRORT         |
+| 38 | OW '*_VS3-04-Adressen_*.dat' | INDIVADRORTSZUSATZ  |
+| 39 | OW '*_VS3-04-Adressen_*.dat' | INDIVADRLAND        |
+| 40 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1ANREDE     |
+| 41 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1ANREDEZUS  |
+| 42 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1TITEL      |
+| 43 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1TITELKURZ  |
+| 44 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1VORNAME    |
+| 45 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR1NACHNAME   |
+| 46 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR2ANREDE     |
+| 47 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR2ANREDEZUS  |
+| 48 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR2TITEL      |
+| 49 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR2TITELKURZ  |
+| 50 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR2VORNAME    |
+| 51 | OW '*_VS3-04-Adressen_*.dat' | INDIVADR2NACHNAME   |
+|===
+
+.Tab _Bankverbindung_
+|===
+| Nr.| Exportdatei                  | Feld(er) | Kommentar
+| 52 | OW '*_VS3-04-Adressen_*.dat' | ADRKTOIN | aus der Personendaten-Bankverbindung
+| 53 | OW '*_VS3-04-Adressen_*.dat' | ADRIBAN  | aus der Personendaten-Bankverbindung
+| 54 | OW '*_VS3-04-Adressen_*.dat' | ADRBIC   | aus der Personendaten-Bankverbindung
+| 55 | OW '*_VS3-04-Adressen_*.dat' | ADRBANK  | aus der Personendaten-Bankverbindung
+|===
+
+.Tab _Informationen_
+|===
+| Nr.| Exportdatei                  | Feld(er) Person | Feld(er) IZA        | Kommentar
+| 56 | OW '*_VS3-04-Adressen_*.dat' | Nr. 23          | INDIVADRSTRASSE     |
+| 57 | OW '*_VS3-04-Adressen_*.dat' | Nr. 24          | INDIVADRPLZ         |
+| 58 | OW '*_VS3-04-Adressen_*.dat' | Nr. 25          | INDIVADRORT         |
+| 59 | OW '*_VS3-04-Adressen_*.dat' | Nr. 26          | INDIVADRORTSZUSATZ  |
+| 60 | OW '*_VS3-04-Adressen_*.dat' | Nr. 27          | INDIVADRLAND        |
+| 61 | OW '*_VS3-04-Adressen_*.dat' | Nr. 28          | INDIVADRHOMEPAGE    |
+| 62 | OW '*_VS3-04-Adressen_*.dat' | ADRRECHT        | INDIVADRRECHT       |
+| 63 | OW '*_VS3-04-Adressen_*.dat' | ADRGESCH        | INDIVADRGESCH       |
+| 64 | OW '*_VS3-04-Adressen_*.dat' | ADRHR           | INDIVADRHR          |
+| 65 | OW '*_VS3-04-Adressen_*.dat' | ADRAMT          | INDIVADRAMT         |
+| 66 | OW '*_VS3-04-Adressen_*.dat' | ADRGEB          | INDIVADRGEB         |
+| 67 | OW '*_VS3-04-Adressen_*.dat' | ADRGEBORT       | INDIVADRGEBORT      |
+| 68 | OW '*_VS3-04-Adressen_*.dat' | ADRGEBNAM       | INDIVADRGEBNAM      |
+| 69 | OW '*_VS3-04-Adressen_*.dat' | ADRNAMEZUSATZ   | INDIVADRNAMEZUSATZ  |
+| 70 | OW '*_VS3-04-Adressen_*.dat' | ADRFAM          | INDIVADRFAM         |
+| 71 | OW '*_VS3-04-Adressen_*.dat' | ADRNAT          | INDIVADRNAT         |
+| 72 | OW '*_VS3-04-Adressen_*.dat' | ADRBERUF        | INDIVADRBERUF       |
+| 73 | OW '*_VS3-04-Adressen_*.dat' | ADRSELBST       | INDIVADRSELBST      | mögliche Werte: ja/Nein
+| 74 | OW '*_VS3-04-Adressen_*.dat' | ADRBANKAUS      | INDIVADRBANKAUS     | mögliche Werte: ja/Nein
+| 75 | OW '*_VS3-04-Adressen_*.dat' | ADRGEB2         | INDIVADRGEB2        |
+| 76 | OW '*_VS3-04-Adressen_*.dat' | ADRGEBORT2      | INDIVADRGEBORT2     |
+| 77 | OW '*_VS3-04-Adressen_*.dat' | ADRGEBNAM2      | INDIVADRGEBNAM2     |
+| 78 | OW '*_VS3-04-Adressen_*.dat' | ADRNAMEZUSATZ2  | INDIVADRNAMEZUSATZ2 |
+| 79 | OW '*_VS3-04-Adressen_*.dat' | ADRFAM2         | INDIVADRFAM2        |
+| 80 | OW '*_VS3-04-Adressen_*.dat' | ADRNAT2         | INDIVADRNAT2        |
+| 81 | OW '*_VS3-04-Adressen_*.dat' | ADRBERUF2       | INDIVADRBERUF2      |
+| 82 | OW '*_VS3-04-Adressen_*.dat' | ADRSELBST2      | INDIVADRSELBST2     | mögliche Werte: ja/Nein
+| 83 | OW '*_VS3-04-Adressen_*.dat' | ADRBANKAUS2     | INDIVADRBANKAUS2    | mögliche Werte: ja/Nein
+|===
